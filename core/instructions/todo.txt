@@ -1,0 +1,5 @@
+canpay cannot be reversed
+
+must be set to canpay
+and
+pay separatedly
