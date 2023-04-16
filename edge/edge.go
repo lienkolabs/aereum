@@ -169,10 +169,6 @@ func (a *Author) CreateStage(description string, permissions, flag byte) (*instr
 		Token:       owner.PublicKey(),
 		Flag:        flag,
 		Description: description,
-		Readers:     make(map[crypto.Token]crypto.Token),
-		Submitors:   make(map[crypto.Token]crypto.Token),
-		Moderators:  make(map[crypto.Token]crypto.Token),
-		Content:     make([]Content, 0),
 		Live:        false,
 	}
 	create := instructions.CreateStage{
